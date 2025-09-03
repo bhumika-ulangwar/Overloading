@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+   
+    Person() {
+        cout << "Age is not given." << endl;
+    }
+
+    Person(int a) {
+        cout << "Age = " << a << endl;
+    }
+Person(int birthyear1, int birthyear2) {
+cout << "Age difference= " << birthyear1- birthyear2 << endl;
+    }
+};
+
+int main() {
+    Person p1;              
+    Person p2(20);
+    Person p3(2002,2006);
+  
+
+    return 0;
+}
+
+//output
+Age is not given.
+Age = 20
+Age difference= 4
+
